@@ -68,15 +68,12 @@
 				<h2>Contactanos</h2>
 				<p>¿Listo para comenzar? Contáctenos para programar una consulta con uno de nuestros expertos.</p>
 			</div>
-			<form>
-				<label>Tu Nombre</label>
-				<input type="text" placeholder="Ingresa Tu Nombre Aquí">
-				<label>Tu Email</label>
-				<input type="email" placeholder="Ingresa Tu Email Aquí">
-				<label>Message</label>
-				<textarea placeholder="Escribenos Tu Mensaje Aquí"></textarea>
-				<button type="submit">Send</button>
-			</form>
+			<form id="contact-form" method="post" action="sendemail.php">
+  <input type="text" name="Nombre" placeholder="Tu Nombre" required>
+  <input type="email" name="Email" placeholder="Tu Email" required>
+  <textarea name="Mensaje" placeholder="Tu Mensaje" required></textarea>
+  <button type="submit">Enviar</button>
+</form>
 		</div>
 	</section>
     <p></p>
