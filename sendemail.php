@@ -6,12 +6,12 @@ if(isset($_POST['email'])) {
     $email_subject = "Contacto Fit Up";
     $smtp_host = 'smtp.gmail.com';
     $smtp_port = 587;
-    $smtp_user = 'youremail@gmail.com';
-    $smtp_password = 'yourpassword';
+    $smtp_user = 'fitup.soporte@gmail.com';
+    $smtp_password = 'Bautiverche.12';
 
-    function died($error) {
+       function died($error) {
         // your error code can go here
-        echo "Lo sentimos mucho, pero se encontraron errores con el formulario que envió. ";
+        echo "We are very sorry, but there were error(s) found with the form you submitted. ";
         echo "These errors appear below.<br /><br />";
         echo $error."<br /><br />";
         echo "Please go back and fix these errors.<br /><br />";
@@ -22,7 +22,7 @@ if(isset($_POST['email'])) {
     if(!isset($_POST['name']) ||
         !isset($_POST['email']) ||
         !isset($_POST['message'])) {
-        died('Lo sentimos pero parece que hubo un error.');       
+        died('We are sorry, but there appears to be a problem with the form you submitted.');       
     }
 
     $name = $_POST['name']; // required
