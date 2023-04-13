@@ -1,0 +1,174 @@
+/* Global Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: white; /* add this line to set the color of all text to white */
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Header */
+  
+  header {
+    background-color: #1a1919;
+    color: rgb(255, 255, 255);
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+  }
+  
+  #branding {
+    float: left;
+  }
+  
+  #branding h1 {
+    font-size: 30px;
+  }
+  
+  nav {
+    float: right;
+    margin-top: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  nav ul li.current a {
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    color: #FDB813;
+  }
+  
+  /* Showcase */
+  
+  #showcase {
+    background-image: url("https://i.imgur.com/lNuyEwc.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  #showcase h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px #111111;
+  }
+  
+  #showcase p {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px #111111;
+  }
+  
+  .button {
+    display: inline-block;
+    background-color: #FDB813;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: none;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #FFC107;
+  }
+  
+  /* About */
+  
+  #about {
+    background-color: #111111;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  #about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  #about p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #777;
+    line-height: 1.6;
+  }
+  
+  /* Services */
+  
+  #services {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  #services h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  #services p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #777;
+    line-height: 1.6;
+  }
+  
+  #services ul {
+    list-style: none;
+    margin-top: 20px;
+  }
+  
+  #services ul li {
+    display: inline-block;
+    margin: 0 20px;
+  }
+ 
+ 
+  footer {
+    background-color: #1a1919;
+    padding: 50px 0;
+    text-align: center;
+  }
+
+  #contact {
+
+        background-color: #111111;
+        padding: 50px 0;
+        text-align: center;
+      }
+
