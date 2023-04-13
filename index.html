@@ -72,16 +72,17 @@
   action="https://formspree.io/f/xnqyoldo"
   method="POST"
 >
-  <label>
-    Tu Email:
-    <input type="email" name="email">
-  </label>
-  <label>
-   Tu mensaje:
-    <textarea name="message"></textarea>
-  </label>
+ <form action="https://formspree.io/f/your_formspree_id" method="POST">
+  <div class="form-group">
+    <label for="email">Tu Email:</label>
+    <input type="email" id="email" name="email" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="message">Tu mensaje:</label>
+    <textarea id="message" name="message" class="form-control"></textarea>
+  </div>
   <!-- your other form fields go here -->
-  <button type="submit">Enviar</button>
+  <button type="submit" class="btn btn-primary">Enviar</button>
 </form>
 		</div>
 	</section>
