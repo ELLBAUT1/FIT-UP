@@ -68,10 +68,19 @@
 				<h2>Contactanos</h2>
 				<p>¿Listo para comenzar? Contáctenos para programar una consulta con uno de nuestros expertos.</p>
 			</div>
-			<form id="contact-form" method="post" action="sendemail.php">
-  <input type="text" name="Nombre" placeholder="Tu Nombre" required>
-  <input type="email" name="Email" placeholder="Tu Email" required>
-  <textarea name="Mensaje" placeholder="Tu Mensaje" required></textarea>
+			<form
+  action="https://formspree.io/f/xnqyoldo"
+  method="POST"
+>
+  <label>
+    Tu Email:
+    <input type="email" name="email">
+  </label>
+  <label>
+   Tu mensaje:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
   <button type="submit">Enviar</button>
 </form>
 		</div>
