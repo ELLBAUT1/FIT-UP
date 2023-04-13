@@ -74,16 +74,52 @@
 >
  <form action="https://formspree.io/f/your_formspree_id" method="POST">
   <div class="form-group">
-    <label for="email">Tu Email:</label>
-    <input type="email" id="email" name="email" class="form-control">
+    <label for="email" class="form-label">Tu Email:</label>
+    <input type="email" id="email" name="email" class="form-control" placeholder="ejemplo@ejemplo.com">
   </div>
   <div class="form-group">
-    <label for="message">Tu mensaje:</label>
-    <textarea id="message" name="message" class="form-control"></textarea>
+    <label for="message" class="form-label">Tu mensaje:</label>
+    <textarea id="message" name="message" class="form-control" placeholder="Escribe tu mensaje aquí"></textarea>
   </div>
   <!-- your other form fields go here -->
   <button type="submit" class="btn btn-primary">Enviar</button>
 </form>
+
+<style>
+  /* Customize form elements */
+  .form-label {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: bold;
+  }
+  .form-control {
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  .form-control:focus {
+    outline: none;
+    box-shadow: 0 0 5px #4d4dff;
+  }
+</style>
+
+<script>
+  // Add animation to form elements on focus
+  const formControl = document.querySelectorAll('.form-control');
+  formControl.forEach(input => {
+    input.addEventListener('focus', () => {
+      input.parentElement.classList.add('focused');
+    });
+    input.addEventListener('blur', () => {
+      if (input.value === '') {
+        input.parentElement.classList.remove('focused');
+      }
+    });
+  });
+</script>
 		</div>
 	</section>
     <p></p>
